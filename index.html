@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Karo</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        /** @type {import('tailwindcss').Config} */
+        module.exports = {
+            theme: {
+                screens: {
+
+                    'sm': { 'min': '640px', 'max': '767px' },
+                    // => @media (min-width: 640px and max-width: 767px) { ... }
+
+                    'md': { 'min': '768px', 'max': '1023px' },
+                    // => @media (min-width: 768px and max-width: 1023px) { ... }
+
+                    'lg': { 'min': '1024px', 'max': '1279px' },
+                    // => @media (min-width: 1024px and max-width: 1279px) { ... }
+
+                    'xl': { 'min': '1280px', 'max': '1535px' },
+                    // => @media (min-width: 1280px and max-width: 1535px) { ... }
+
+                    '2xl': { 'min': '1536px' },
+                    // => @media (min-width: 1536px) { ... }
+
+                    extend: {
+                        screens: {
+
+
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+    <nav class="flex items-center justify-between p-6 lg:px-8 bg-black h-[20px]" aria-label="Global">
+        <div class="flex lg:flex-1">
+            <a href="#" class="-m-1.5 p-1.5 flex flex-row-reverse gap-2 font-bold text-[20px]">
+                <span class=" text-white">GYM KARO</span>
+                <img class="h-8 w-auto" src=https://cdn-icons-png.flaticon.com/128/2112/2112184.png?" alt="GYM KARO">
+            </a>
+        </div>
+        <div class="flex lg:hidden">
+            <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Open main menu</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    aria-hidden="true">
+                    <path class="text-white" stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12 ">
+            <a href="#" class="text-[20px] font-semibold leading-6 text-white">Home</a>
+            <a href="#about" class="text-[20px] font-semibold leading-6 text-white">About</a>
+            <a href="#services" class="text-[20px] font-semibold leading-6 text-white">Services</a>
+            <a href="#contact" class="text-[20px] font-semibold leading-6 text-white">Contact</a>
+        </div>
+    </nav>
+
+    <section class="section-1 h-[120vh] sm:h-[100vh]">
+        <div
+            class="bg-fixed h-[100%] bg-cover bg-center h- bg-[url('https://images.pexels.com/photos/50597/man-male-boy-a-person-50597.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
+            <!-- <div class="h-[100%] h-screen bg-[0,0,0,.5]"></div> -->
+            <h1 class="text-[white] text-[24px] font-black uppercase text-center pt-[40%] sm:pt-[20%] text-[54px] ">
+                It's <span class="text-[red]">gym</span> time. Let's go <br> We are ready to <span
+                    class="text-[red]">fit you</span>
+            </h1>
+            <div class="flex justify-center pt-10">
+                <a href="#section-2"> <img src="https://cdn-icons-png.flaticon.com/128/14791/14791385.png" alt=""
+                        class="h-[50px] animate-bounce w-15 h-6 center"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-2 p-[10%]  sm:p-[10%] " id="services">
+        <!-- <div class="h-[100%] h-screen bg-[0,0,0,.5] "></div> -->
+        <h1 class="text-[45px] font-bold text-center mb-5 mt-[-8%]">Services</h1>
+        <div class="grid grid-cols-1 place-items-center gap-5 sm:grid-cols-2  md:grid-cols-3 ">
+            <div class="section-1-card max-w-[300px]">
+                <img src="https://mian-ali.github.io/GymWebsite/images/about1.jpg" alt=""
+                    class="rounded-[20px] hover:-translate-y-5">
+                <h2 class="text-[20px] font-bold py-1">Free Consultation</h2>
+                <p class="text-justify ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                    only five centuries</p>
+            </div>
+
+            <div class="section-1-card max-w-[300px]">
+                <img src="https://mian-ali.github.io/GymWebsite/images/about1.jpg" alt=""
+                    class="rounded-[20px] hover:-translate-y-5">
+                <h2 class="text-[20px] font-bold py-1">Free Consultation</h2>
+                <p class="text-justify ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                    only five centuries</p>
+            </div>
+
+            <div class="section-1-card max-w-[300px]">
+                <img src="https://mian-ali.github.io/GymWebsite/images/about1.jpg" alt=""
+                    class="rounded-[20px] hover:-translate-y-5">
+                <h2 class="text-[20px] font-bold py-1">Free Consultation</h2>
+                <p class="text-justify ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                    only five centuries</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="sm:abot-section h-[900px] md:h-[500px]" id="about">
+
+        <div
+            class=" md:flex flex-row bg-fixed h-[100%] bg-cover bg-center h- bg-[url('https://images.pexels.com/photos/4753898/pexels-photo-4753898.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]  ">
+            <div class="basis-1/2 flex justify-center">
+                <img src="https://fitness-gym-website-design.netlify.app/static/media/img-6.87d72682a913964b98ca.jpg"
+                    alt="" class="h-[500px] ms-5 mt-[5%] border-inherit border-4 rounded-[20px] sm: h-[50vh]">
+            </div>
+            <div class="basis-1/2 max-w-[600px] mt-[2%] px-5 ">
+                <h1 class="text-white text-[15px] pb-5 sm: pt-5 text-[blue]">ABOUT OUR GYM</h1>
+                <h2 class="text-white text-[20px] font-bold pb-5 ">SAFE BODY BUILDING PROPER SOLUTIONS THAT SAVES OUR
+                    VALUABLE TIME!</h2>
+                <p class="text-white text-[18px] ">Brook presents your services with flexible, convenient and cdpose
+                    layouts. You can select your favorite layouts & elements for cular ts with unlimited ustomization
+                    possibilities. Pixel-perfect replication of the designers is intended
+                    <br><br>Brook presents your services with flexible, convefnient and chient anipurpose layouts. You
+                    can select your favorite layouts.
+                </p>
+                <button class=" btn">BECOME A MEMBER</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial">
+        <section class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-3 lg:px-8">
+            <div
+                class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20">
+            </div>
+            <div
+                class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center">
+            </div>
+            <div class="mx-auto max-w-2xl lg:max-w-4xl">
+                <h2 class="mx-auto h-12 text-[20px] font-bold text-center">CLIENT FEEDBACK</h2>
+                <figure class="mt-10">
+                    <blockquote class="text-center text-xl leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+                        <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa
+                            sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”</p>
+                    </blockquote>
+                    <figcaption class="mt-10">
+                        <img class="mx-auto h-10 w-10 rounded-full"
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                            alt="">
+                        <div class="mt-4 flex items-center justify-center space-x-3 text-base">
+                            <div class="font-semibold text-gray-900">Judith Black</div>
+                            <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
+                                <circle cx="1" cy="1" r="1" />
+                            </svg>
+                            <div class="text-gray-600">CEO of Workcation</div>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    </section>
+
+
+    <section class="trainer-tab py-10">
+        <h2 class="text-[25px] sm:text-[45px] font-bold text-center">OUR MOST EXPERIENCE TRAINERS</h2>
+        <div class=" sm:trainer-card-container flex-row flex flex-wrap p-5 gap-5 justify-center">
+            <div
+                class="m-2 group basis-3/2trainer-card bg-[url('https://images.pexels.com/photos/3490348/pexels-photo-3490348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] h-[400px] w-[350px] bg-center bg-cover rounded-[20px]">
+                <div class="card-detail bg-[red] p-5 mt-[100%] group-hover:-translate-y-5 duration-500 ">
+                    <h2 class="font-bold text-[15px] text-white px-5">Creative director</h2>
+                    <h1 class="font-bold text-[20px] text-white px-5">Ramesh Prajapati</h1>
+                </div>
+            </div>
+
+            <div
+                class="m-2 group basis-3/2trainer-card bg-[url('https://images.pexels.com/photos/3490348/pexels-photo-3490348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] h-[400px] w-[350px] bg-center bg-cover rounded-[20px]">
+                <div class="card-detail bg-[red] p-5 mt-[100%] group-hover:-translate-y-5 duration-500 ">
+                    <h2 class="font-bold text-[15px] text-white px-5">Creative director</h2>
+                    <h1 class="font-bold text-[20px] text-white px-5">Ramesh Prajapati</h1>
+                </div>
+            </div>
+
+            <div
+                class="m-2 group basis-3/2trainer-card bg-[url('https://images.pexels.com/photos/3490348/pexels-photo-3490348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] h-[400px] w-[350px] bg-center bg-cover rounded-[20px]">
+                <div class="card-detail bg-[red] p-5 mt-[100%] group-hover:-translate-y-5 duration-500 ">
+                    <h2 class="font-bold text-[15px] text-white px-5">Creative director</h2>
+                    <h1 class="font-bold text-[20px] text-white px-5">Ramesh Prajapati</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="membership bg-[green] h-[200px],h-5">
+        <div class="p-[2%_5%] sm:flex flex-wrap justify-center gap-[30%] p-[2%_15%] ">
+            <div class="sm:text-[40px] font-bold text-[25px] font-bold ">
+                <h2> April membership offer <br>available Now</h2>
+            </div>
+            <div class="py-5"><button class="btn p-[5px_10px]">MORE SERVICES</button></div>
+        </div>
+    </section>
+
+
+    <section class="schedule h-[50vh] mb-5">
+        <h2 class="text-[25px] font-bold text-center m-10">OUR TIME SCHEDULE</h2>
+        <div class=" flex-wrap days flex flex row gap-10 justify-center ">
+            <button class=" undefined group p-[.5%_1.5%] focus:bg-[red] text-[20px] font-bold">Sunday</button>
+            <button class="group-hover:bg-[red] p-[.5%_1.5%] focus:bg-[red] text-[20px] font-bold">Monday</button>
+            <button class=" p-[.5%_1.5%] focus:bg-[red] text-[20px] font-bold">Tuesday</button>
+            <button class=" p-[.5%_1.5%] focus:bg-[red] text-[20px] font-bold">Wednesday</button>
+            <button class=" p-[.5%_1.5%] focus:bg-[red] text-[20px] font-bold">Thusday</button>
+            <button class=" p-[.5%_1.5%] focus:bg-[red] text-[20px] font-bold">Friday</button>
+            <button class=" p-[.5%_1.5%] focus:bg-[red] text-[20px] font-bold">Saturday</button>
+
+        </div>
+
+        <div class="flex gap-1 justify-center mt-10 flex-wrap">
+
+            <div class="group p-[1%_2%] hover:bg-[red] text-[20px] font-bold rounded-[20px]">
+                <button class="btn p-3">6am-8am</button>
+                <h2>Kick Boxing</h2>
+                <h3>by Jhos Butler</h3>
+            </div>
+
+            <div class="p-[1%_2%] hover:bg-[red] text-[20px] font-bold rounded-[20px]">
+                <button class="btn p-3">6am-8am</button>
+                <h2>Kick Boxing</h2>
+                <h3>by Jhos Butler</h3>
+            </div>
+
+            <div class="p-[1%_2%] hover:bg-[red] text-[20px] font-bold rounded-[20px]">
+                <button class="btn p-3">6am-8am</button>
+                <h2>Kick Boxing</h2>
+                <h3>by Jhos Butler</h3>
+            </div>
+
+            <div class="p-[1%_2%] hover:bg-[red] text-[20px] font-bold rounded-[20px]">
+                <button class="btn p-3">6am-8am</button>
+                <h2>Kick Boxing</h2>
+                <h3>by Jhos Butler</h3>
+            </div>
+
+            <div class="p-[1%_2%] hover:bg-[red] text-[20px] font-bold rounded-[20px]">
+                <button class="btn p-3">6am-8am</button>
+                <h2>Kick Boxing</h2>
+                <h3>by Jhos Butler</h3>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="sm:form flex justify-center gap-10 flex-wrap mt-[80%] md:mt-[0%]" id="contact">
+        <div>
+            <img src="https://images.pexels.com/photos/1431282/pexels-photo-1431282.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="" class="h-[480px] rounded-[20px]">
+        </div>
+        <div>
+            <h2 class="text-[25px] font-bold pb-10">FEEL FREE TO CONTACT <br> WITH US!</h2>
+            <form class="sm:w-[50px] mx-auto md:w-[550px] ">
+                <div class="grid md:grid-cols-2 md:gap-6">
+                    <div class="relative z-0 w-full mb-5 group pb-10">
+                        <input type="text" name="floating_first_name" id="floating_first_name"
+                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                            placeholder=" " required />
+                        <label for="floating_first_name"
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First
+                            name</label>
+                    </div>
+                    <div class="relative z-0 w-full mb-5 group pb-10">
+                        <input type="text" name="floating_last_name" id="floating_last_name"
+                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                            placeholder=" " required />
+                        <label for="floating_last_name"
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last
+                            name</label>
+                    </div>
+                </div>
+                <div class="relative z-0 w-full mb-5 group pb-10">
+                    <input type="email" name="floating_email" id="floating_email"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" " required />
+                    <label for="floating_email"
+                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
+                        address</label>
+                </div>
+
+                <div class="grid md:grid-cols-2 md:gap-6 pb-10">
+                    <div class="relative z-0 w-full mb-5 group">
+                        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone"
+                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                            placeholder=" " required />
+                        <label for="floating_phone"
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone
+                            number (123-456-7890)</label>
+                    </div>
+                    <div class="relative z-0 w-full mb-5 group pt-10 md:pt-0">
+                        <input type="text " name="floating_company" id="floating_company"
+                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                            placeholder=" " required />
+                        <label for="floating_company "
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 pt-10 md:pt-0">Company
+                            (Ex. Google)</label>
+                    </div>
+                </div>
+                <button type="submit"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer class=" mt-10 ">
+        <div
+            class="px-10 py-[2%] text-white bg-[url('https://images.pexels.com/photos/5956909/pexels-photo-5956909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-cover  bg-bottom  sm:grid grid-cols-4 ">
+            <div>
+                <h2 class="py-5 font-bold text-[20px]">COMPANY</h2>
+                <ul>
+                    <li class="py-2">Home</li>
+                    <li class="py-2">Company</li>
+                    <li class="py-2">Blog</li>
+                    <li class="py-2">Privacy Policy</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="py-5 font-bold text-[20px]">OPEN HOUR</h2>
+                <ul>
+                    <li class="py-2">Monday 11am-7pm</li>
+                    <li class="py-2">Tuesday-Friday 11am-8pm</li>
+                    <li class="py-2">Saturday 10am-6pm</li>
+                    <li class="py-2">Sunday 11am-6pm</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="py-5 font-bold text-[20px]">RESOURCES</h2>
+                <ul>
+                    <li class="py-2">Home Insurance</li>
+                    <li class="py-2">Travel Insurance</li>
+                    <li class="py-2">Car Insurance</li>
+                    <li class="py-2">Business Insurance</li>
+                </ul>
+            </div>
+            <div>
+                <img src="" alt="">
+                <h2 class="py-5 font-bold text-[20px]">GYM KARO</h2>
+                <p>GThe trade war currently ensuing between te US anfd several natxions around thdhe globe, most
+                    fiercely with.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
